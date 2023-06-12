@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login1Fragment">
+
+    <fragment
+        android:id="@+id/login1Fragment"
+        android:name="com.example.proyecto_integral.login1Fragment"
+        android:label="fragment_login1"
+        tools:layout="@layout/fragment_login1" >
+        <action
+            android:id="@+id/action_login1Fragment_to_listadoFragment"
+            app:destination="@id/listadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listadoFragment"
+        android:name="com.example.proyecto_integral.ListadoFragment"
+        android:label="fragment_listado"
+        tools:layout="@layout/fragment_listado" />
+</navigation>
